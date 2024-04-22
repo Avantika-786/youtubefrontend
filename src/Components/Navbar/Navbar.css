@@ -66,3 +66,11 @@
     padding: 0.5rem;
     border-radius: 0.1rem;
 }
+#logo {
+    margin-top: 10px;
+    width: 28 px;
+    height: 28px;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 0.1rem;
+}
