@@ -16,13 +16,6 @@ function Navbar({ toggleDrawer, setEditCreateChanelBtn }) {
   const [AuthBtn, setAuthBtn] = useState(false);
   const CurrentUser = useSelector((state) => state.currentUserReducer);
 
-  // const CurrentUser = null;
-  //   const CurrentUser = {
-  //   result: {
-  //     email: "abzxy50312@gmail.com",
-  //     joinedOn: "2222-07-15T09:57:23.489Z",
-  //   },
-  // };
   console.log(CurrentUser);
   useEffect(() => {
     function start() {
@@ -36,9 +29,7 @@ function Navbar({ toggleDrawer, setEditCreateChanelBtn }) {
   }, []);
 
   const dispatch = useDispatch();
-  // const logTmp=()=>{
-  //   dispatch(login({ email:"abzxy50312@gmail.com" }));
-  // }
+
   const onSuccess = (response) => {
     const Email = response?.profileObj.email;
     console.log(Email);
@@ -122,4 +113,3 @@ function Navbar({ toggleDrawer, setEditCreateChanelBtn }) {
 }
 
 export default Navbar;
-
