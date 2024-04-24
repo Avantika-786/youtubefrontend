@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import logo from "./logo.ico";
+import logo from "./newlogo.ico";
 import SearchBar from "./SearchBar/SearchBar";
 import { RiVideoAddLine } from "react-icons/ri";
 import { BiUserCircle } from "react-icons/bi";
@@ -59,8 +59,8 @@ function Navbar({ toggleDrawer, setEditCreateChanelBtn }) {
           </div>
 
           <Link to={"/"} className="logo_div_Navbar">
-            <img src={logo} alt="" />
-            <p className="logo_title_navbar">YouTube</p>
+            <img src={logo} alt="" id="logo" />
+            <p className="logo_title_navbar">VidCraft</p>
           </Link>
         </div>
         <SearchBar />
